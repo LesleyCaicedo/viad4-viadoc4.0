@@ -1,5 +1,6 @@
 ﻿using EntityLayer.Responses;
 using EntityLayer.Models;
+using DataLayer.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,16 +28,32 @@ namespace DataLayer.repositorio
             _context = context;
         }
 
+
+
         public async Task<Response> IngresarFactura(Factura1DTO factura1DTO)
         {
             Response response = new Response();
+            Utilitie util = new Utilitie(_context);
 
             try
             {
                 try
                 {
+                    response = await util.ComprobarClaveacceso(factura1DTO.TxClaveAcceso, factura1DTO.CiTipoDocumento, factura1DTO.TxSecuencial, factura1DTO.TxPuntoEmision, factura1DTO.TxEstablecimiento);
+
+                    if(factura1DTO.TxClaveAcceso == "")
+                    {
+                       factura1DTO.TxClaveAcceso = util.GenerarClaveAcceso(factura1DTO.CiTipoDocumento, factura1DTO.TxSecuencial, factura1DTO.TxPuntoEmision, factura1DTO.TxEstablecimiento, factura1DTO.TxFechaEmision, factura1DTO.ruc, factura1DTO.ciAmbiente);
+                    }
+
+                    if (response.Code == ResponseType.Error) 
+                    {
+                        return response;
+                    }
+
                     Factura1 nuevaFactura = facturaMapper.Factura1ToFactura1DTO(factura1DTO);
                     _context.Facturas1.Add(nuevaFactura);
+
                 }
                 catch (Exception ex) 
                 {

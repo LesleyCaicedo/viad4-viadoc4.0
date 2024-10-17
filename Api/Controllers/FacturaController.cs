@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Services;
 using EntityLayer.DTO.FacturaDTO;
 using EntityLayer.DTO.NotaCreditoDTO;
+using EntityLayer.DTO.NotaDebitoDTO;
 using EntityLayer.Responses;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +37,18 @@ namespace Api.Controllers
         public async Task<IActionResult> IngresarNotaCredito(NotaCreditoDTO notaCreditoDTO)
         {
             response = await _facturaInsertar.IngresarNotaCredito(notaCreditoDTO);
+            if (response.Code == ResponseType.Error)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> IngresarNotaDebito(NotaDebitoDTO notaDebitoDTO)
+        {
+            response = await _facturaInsertar.IngresarNotaDebito(notaDebitoDTO);
             if (response.Code == ResponseType.Error)
             {
                 return BadRequest(response);

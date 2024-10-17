@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.repositorio
+namespace DataLayer.repositorio 
 {
-    public class NotaDebitoRepositorio
+    public class NotaDebitoRepositorio : INotaDebitoRepositorio
     {
         private readonly FacturacionElectronicaQaContext _context;
 
@@ -79,6 +79,7 @@ namespace DataLayer.repositorio
                     return response;
                 }
 
+                /* NotaDebitoModelo 
                 try
                 {
                     foreach (NotaDebitoMotivoDTO notaDebitoMotivoDTO in notaDebitoDTO.notaDebitoMotivoModelo)
@@ -96,6 +97,13 @@ namespace DataLayer.repositorio
 
                     return response;
                 }
+                */
+                
+                await _context.SaveChangesAsync();
+
+                response.Code = ResponseType.Success;
+                response.Message = $"Nota de credito ingresada correctamente";
+                response.Data = null;
 
             }
             catch (Exception ex) 

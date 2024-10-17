@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\repositorio\\notadebitorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repositorio\\notadebitorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\utilities\\utilitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\utilities\\utilitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\mappers\\notadebitomapper\\notadebitomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\mappers\\notadebitomapper\\notadebitomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\repositorio\\notacreditorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repositorio\\notacreditorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\repositorio\\facturarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repositorio\\facturarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\dto\\notadebitodto\\notadebitodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,60 +25,46 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NotaCreditoRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\NotaCreditoRepositorio.cs",
-              "RelativeDocumentMoniker": "DataLayer\\repositorio\\NotaCreditoRepositorio.cs",
-              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\NotaCreditoRepositorio.cs",
-              "RelativeToolTip": "DataLayer\\repositorio\\NotaCreditoRepositorio.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowCkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:29:48.664Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NotaDebitoMapper.cs",
-              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\Mappers\\NotaDebitoMapper\\NotaDebitoMapper.cs",
-              "RelativeDocumentMoniker": "EntityLayer\\Mappers\\NotaDebitoMapper\\NotaDebitoMapper.cs",
-              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\Mappers\\NotaDebitoMapper\\NotaDebitoMapper.cs",
-              "RelativeToolTip": "EntityLayer\\Mappers\\NotaDebitoMapper\\NotaDebitoMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:32:56.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NotaDebitoRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\NotaDebitoRepositorio.cs",
-              "RelativeDocumentMoniker": "DataLayer\\repositorio\\NotaDebitoRepositorio.cs",
-              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\NotaDebitoRepositorio.cs",
-              "RelativeToolTip": "DataLayer\\repositorio\\NotaDebitoRepositorio.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAowBsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:25:32.46Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "NotaDebitoDTO.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\DTO\\NotaDebitoDTO\\NotaDebitoDTO.cs",
               "RelativeDocumentMoniker": "EntityLayer\\DTO\\NotaDebitoDTO\\NotaDebitoDTO.cs",
               "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\DTO\\NotaDebitoDTO\\NotaDebitoDTO.cs",
               "RelativeToolTip": "EntityLayer\\DTO\\NotaDebitoDTO\\NotaDebitoDTO.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAzwEIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAuwEUAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:03:16.908Z",
+              "WhenOpened": "2024-10-17T19:02:18.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Utilitie.cs",
+              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\Utilities\\Utilitie.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Utilities\\Utilitie.cs",
+              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\Utilities\\Utilitie.cs",
+              "RelativeToolTip": "DataLayer\\Utilities\\Utilitie.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T13:22:11.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacturaRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\FacturaRepositorio.cs",
+              "RelativeDocumentMoniker": "DataLayer\\repositorio\\FacturaRepositorio.cs",
+              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\FacturaRepositorio.cs",
+              "RelativeToolTip": "DataLayer\\repositorio\\FacturaRepositorio.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T15:29:35.823Z",
               "EditorCaption": ""
             }
           ]

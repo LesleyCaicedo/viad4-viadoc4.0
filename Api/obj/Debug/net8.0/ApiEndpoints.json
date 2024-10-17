@@ -30,5 +30,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.FacturaController",
+    "Method": "IngresarNotaDebito",
+    "RelativePath": "api/Factura/IngresarNotaDebito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notaDebitoDTO",
+        "Type": "EntityLayer.DTO.NotaDebitoDTO.NotaDebitoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

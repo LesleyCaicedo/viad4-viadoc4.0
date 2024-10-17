@@ -8,6 +8,8 @@ namespace EntityLayer.DTO.FacturaDTO
 {
     public class Factura1DTO
     {
+        public string ruc {  get; set; }
+        public string ciAmbiente {  get; set; }
         public int CiCompania { get; set; }
 
         public int CiTipoEmision { get; set; }

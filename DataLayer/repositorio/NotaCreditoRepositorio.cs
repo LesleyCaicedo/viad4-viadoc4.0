@@ -1,4 +1,5 @@
-﻿using EntityLayer.DTO.NotaCreditoDTO;
+﻿using DataLayer.Utilities;
+using EntityLayer.DTO.NotaCreditoDTO;
 using EntityLayer.Mappers.NotaCreditoMapper;
 using EntityLayer.Models;
 using EntityLayer.Responses;
@@ -28,12 +29,24 @@ namespace DataLayer.repositorio
         public async Task<Response> IngresarNotaCredito(NotaCreditoDTO notaCreditoDTO)
         {
             Response response = new Response();
+            Utilitie util = new Utilitie(_context);
 
             try
             {
-
                 try
                 {
+                    response = await util.ComprobarClaveacceso(notaCreditoDTO.TxClaveAcceso, notaCreditoDTO.CiTipoDocumento, notaCreditoDTO.TxSecuencial, notaCreditoDTO.TxPuntoEmision, notaCreditoDTO.TxEstablecimiento);
+
+                    if (notaCreditoDTO.TxClaveAcceso == "")
+                    {
+                        notaCreditoDTO.TxClaveAcceso = util.GenerarClaveAcceso(notaCreditoDTO.CiTipoDocumento, notaCreditoDTO.TxSecuencial, notaCreditoDTO.TxPuntoEmision, notaCreditoDTO.TxEstablecimiento, notaCreditoDTO.TxFechaEmision, notaCreditoDTO.ruc, notaCreditoDTO.ciAmbiente);
+                    }
+                    
+                    if (response.Code == ResponseType.Error)
+                    {
+                        return response;
+                    }
+                    
                     NotaCredito nuevaNC = notaCreditoMapper.NotaCreditoToNotaCreditoDTO(notaCreditoDTO);
                     _context.NotaCreditos.Add(nuevaNC);
 

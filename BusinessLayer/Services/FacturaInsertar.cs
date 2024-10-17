@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EntityLayer.DTO.FacturaDTO;
 using EntityLayer.DTO.NotaCreditoDTO;
+using EntityLayer.DTO.NotaDebitoDTO;
 
 namespace BusinessLayer.Services
 {
@@ -14,14 +15,16 @@ namespace BusinessLayer.Services
     {
         public readonly IFacturaRepositorio _facturaRepositorio;
         public readonly INotaCreditoRepositorio _notaCreditoRepositorio;
+        public readonly INotaDebitoRepositorio _debitoRepositorio;
 
         private Response response = new();
 
-        public FacturaInsertar(IFacturaRepositorio facturaRepositorio, INotaCreditoRepositorio notaCreditoRepositorio)
+        public FacturaInsertar(IFacturaRepositorio facturaRepositorio, INotaCreditoRepositorio notaCreditoRepositorio, INotaDebitoRepositorio debitoRepositorio)
         {
             _facturaRepositorio = facturaRepositorio;
 
             _notaCreditoRepositorio = notaCreditoRepositorio;
+            _debitoRepositorio = debitoRepositorio;
         }
 
         public async Task<Response> IngresarFactura(Factura1DTO factura1DTO)
@@ -33,6 +36,12 @@ namespace BusinessLayer.Services
         public async Task<Response> IngresarNotaCredito(NotaCreditoDTO notaCreditoDTO)
         {
             response = await _notaCreditoRepositorio.IngresarNotaCredito(notaCreditoDTO);
+            return response;
+        }
+
+        public async Task<Response> IngresarNotaDebito(NotaDebitoDTO notaDebitoDTO)
+        {
+            response = await _debitoRepositorio.IngresarNotaDebito(notaDebitoDTO);
             return response;
         }
 

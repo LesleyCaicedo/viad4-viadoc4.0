@@ -8,7 +8,9 @@ namespace EntityLayer.DTO.NotaDebitoDTO
 {
     public class NotaDebitoDTO
     {
-        public int CiNotaDebito { get; set; }
+        public string ruc { get; set; }
+
+        public string ciAmbiente { get; set; }
 
         public int CiCompania { get; set; }
 
@@ -66,6 +68,5 @@ namespace EntityLayer.DTO.NotaDebitoDTO
 
         public List<NotaDebitoImpuestoDTO> notaDebitoImpuestoModelo { get; set; }
         public List<NotaDebitoInfoAdicionalDTO> notaDebitoInfoAdicionalModelo { get; set; }
-        public List<NotaDebitoMotivoDTO> notaDebitoMotivoModelo { get; set; }
     }
 }

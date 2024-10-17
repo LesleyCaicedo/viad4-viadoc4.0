@@ -8,6 +8,10 @@ namespace EntityLayer.DTO.NotaCreditoDTO
 {
     public class NotaCreditoDTO
     {
+        public string ruc { get; set; }
+
+        public string ciAmbiente { get; set; }
+
         public int CiNotaCredito { get; set; }
 
         public int CiCompania { get; set; }
