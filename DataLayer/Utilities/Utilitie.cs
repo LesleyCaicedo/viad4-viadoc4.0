@@ -21,6 +21,7 @@ namespace DataLayer.Utilities
         public async Task<Response> DocumentosNoAutorizados(string tipoDocu)
         {
             Response response = new Response();
+            List<string> claveacceso = new List<string>();
 
             if (tipoDocu != null) 
             {
@@ -28,16 +29,111 @@ namespace DataLayer.Utilities
 
                     case "01":
 
-                        List<string> claveacceso = await _context.Facturas1.Where(f => f.CiEstadoRecepcionAutorizacion == "EFI").Select(f => f.TxClaveAcceso).ToListAsync();
+                        claveacceso = await _context.Facturas1.Where(f => f.CiEstadoRecepcionAutorizacion == "EFI" ||
+                                                                          f.CiEstadoRecepcionAutorizacion == "ERE" ||
+                                                                          f.CiEstadoRecepcionAutorizacion == "EAU" || 
+                                                                          f.CiEstadoRecepcionAutorizacion == "ECO" || 
+                                                                          f.CiEstadoRecepcionAutorizacion == "NAU" || 
+                                                                          f.CiEstadoRecepcionAutorizacion == "RAU" || 
+                                                                          f.CiEstadoRecepcionAutorizacion == "RER").Select(f => f.TxClaveAcceso).ToListAsync();
+                        
+                        response.Code = ResponseType.Success;
+                        response.Message = "Lista de facturas error";
+                        response.Data = claveacceso;
+                        //var error = await _context.Facturas1.Where(f => f.CiEstadoRecepcionAutorizacion == "EFI").Select(f => new Factura1DTO { TxSecuencial = f.TxSecuencial, TxPuntoEmision = f.} ).ToListAsync();
 
-                        var error = await _context.Facturas1.Where(f => f.CiEstadoRecepcionAutorizacion == "EFI").Select(f => f.TxSecuencial , f.TxPuntoEmision).ToListAsync();
+                        break;
+
+                    case "03":
+
+                        claveacceso = await _context.Liquidacions.Where(l => l.CiEstadoRecepcionAutorizacion == "EFI" ||
+                                                                             l.CiEstadoRecepcionAutorizacion == "ERE" ||
+                                                                             l.CiEstadoRecepcionAutorizacion == "EAU" ||
+                                                                             l.CiEstadoRecepcionAutorizacion == "ECO" ||
+                                                                             l.CiEstadoRecepcionAutorizacion == "NAU" ||
+                                                                             l.CiEstadoRecepcionAutorizacion == "RAU" ||
+                                                                             l.CiEstadoRecepcionAutorizacion == "RER").Select(l => l.TxClaveAcceso).ToListAsync();
+
+                        response.Code = ResponseType.Success;
+                        response.Message = "Lista de liquidaciones error";
+                        response.Data = claveacceso;
+
+                        break;
+
+                    case "04":
+
+                        claveacceso = await _context.NotaCreditos.Where(c => c.CiEstadoRecepcionAutorizacion == "EFI" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "ERE" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "EAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "ECO" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "NAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "RAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "RER").Select(c => c.TxClaveAcceso).ToListAsync();
+
+                        response.Code = ResponseType.Success;
+                        response.Message = "Lista de Notas Credito error";
+                        response.Data = claveacceso;
+
+                        break;
+
+                    case "05":
+
+                        claveacceso = await _context.NotaDebitos.Where(d => d.CiEstadoRecepcionAutorizacion == "EFI" ||
+                                                                            d.CiEstadoRecepcionAutorizacion == "ERE" ||
+                                                                            d.CiEstadoRecepcionAutorizacion == "EAU" ||
+                                                                            d.CiEstadoRecepcionAutorizacion == "ECO" ||
+                                                                            d.CiEstadoRecepcionAutorizacion == "NAU" ||
+                                                                            d.CiEstadoRecepcionAutorizacion == "RAU" ||
+                                                                            d.CiEstadoRecepcionAutorizacion == "RER").Select(d => d.TxClaveAcceso).ToListAsync();
+
+                        response.Code = ResponseType.Success;
+                        response.Message = "Lista de Notas Debito error";
+                        response.Data = claveacceso;
+
+                        break;
+
+                    case "06":
+
+                        claveacceso = await _context.GuiaRemisions.Where(c => c.CiEstadoRecepcionAutorizacion == "EFI" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "ERE" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "EAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "ECO" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "NAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "RAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "RER").Select(c => c.TxClaveAcceso).ToListAsync();
+
+                        response.Code = ResponseType.Success;
+                        response.Message = "Lista de Remisiones error";
+                        response.Data = claveacceso;
+
+                        break;
+
+                    case "07":
+
+                        claveacceso = await _context.CompRetencions.Where(c => c.CiEstadoRecepcionAutorizacion == "EFI" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "ERE" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "EAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "ECO" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "NAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "RAU" ||
+                                                                             c.CiEstadoRecepcionAutorizacion == "RER").Select(c => c.TxClaveAcceso).ToListAsync();
+
+                        response.Code = ResponseType.Success;
+                        response.Message = "Lista de error";
+                        response.Data = claveacceso;
 
 
                         break;
 
-                
+                    default:
+                        response.Code = ResponseType.Error;
+                        response.Message = "No ingreso un tipo de documento valido";
+                        break;
+
                 }            
             }
+
+            return response;
         }
 
         public async Task<Response> ComprobarClaveacceso(string claveacceso, string tipoDocu, string txSecuencial, 
