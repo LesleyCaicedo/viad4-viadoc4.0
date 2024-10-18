@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\api\\controllers\\pruebascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|solutionrelative:api\\controllers\\pruebascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\repositorio\\pruebasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repositorio\\pruebasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\api\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|solutionrelative:api\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\ipruebaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\ipruebaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\models\\tipodocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\models\\tipodocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\utilities\\utilitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\utilities\\utilitie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\ipruebaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\ipruebaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\api\\controllers\\pruebascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|solutionrelative:api\\controllers\\pruebascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\models\\tipodocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\models\\tipodocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,28 +42,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Utilitie.cs",
+              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\Utilities\\Utilitie.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Utilities\\Utilitie.cs",
+              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\Utilities\\Utilitie.cs",
+              "RelativeToolTip": "DataLayer\\Utilities\\Utilitie.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:42:16.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\Models\\Factura.cs",
+              "RelativeToolTip": "EntityLayer\\Models\\Factura.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:29:26.455Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
               "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Program.cs",
               "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T14:54:58.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TipoDocumento.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\Models\\TipoDocumento.cs",
               "RelativeDocumentMoniker": "EntityLayer\\Models\\TipoDocumento.cs",
@@ -76,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PruebasController.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Controllers\\PruebasController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\PruebasController.cs",
@@ -89,20 +115,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PruebasRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\PruebasRepositorio.cs",
               "RelativeDocumentMoniker": "DataLayer\\repositorio\\PruebasRepositorio.cs",
               "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\PruebasRepositorio.cs",
               "RelativeToolTip": "DataLayer\\repositorio\\PruebasRepositorio.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAoAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T14:10:02.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "IPruebaServicio.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\BusinessLayer\\Services\\IPruebaServicio.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\IPruebaServicio.cs",
@@ -115,41 +141,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "PruebasServicio.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\BusinessLayer\\Services\\PruebasServicio.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\PruebasServicio.cs",
               "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\BusinessLayer\\Services\\PruebasServicio.cs",
               "RelativeToolTip": "BusinessLayer\\Services\\PruebasServicio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwB8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T14:08:27.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Utilitie.cs",
-              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\Utilities\\Utilitie.cs",
-              "RelativeDocumentMoniker": "DataLayer\\Utilities\\Utilitie.cs",
-              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\Utilities\\Utilitie.cs",
-              "RelativeToolTip": "DataLayer\\Utilities\\Utilitie.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA6wDoAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T13:22:11.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FacturaController.cs",
-              "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Controllers\\FacturaController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\FacturaController.cs",
-              "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Controllers\\FacturaController.cs",
-              "RelativeToolTip": "Api\\Controllers\\FacturaController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:51:08.925Z",
               "EditorCaption": ""
             }
           ]
