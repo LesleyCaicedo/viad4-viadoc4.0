@@ -10,5 +10,6 @@ namespace BusinessLayer.Services
     public interface IPruebaServicio
     {
         public Task<Response> BuscarDocumentosError(string tipoDocumento);
+        public Task<Response> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin);
     }
 }

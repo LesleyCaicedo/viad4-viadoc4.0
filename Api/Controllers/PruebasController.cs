@@ -30,5 +30,16 @@ namespace Api.Controllers
             }
             return Ok(response);
         }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin)
+        {
+            response = await pruebaServicio.TDocumentosEmpresas(CiCompania,fechaInicio,fechaFin);
+            if (response.Code == ResponseType.Error)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
     }
 }

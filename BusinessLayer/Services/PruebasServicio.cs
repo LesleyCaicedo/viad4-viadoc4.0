@@ -27,10 +27,10 @@ namespace BusinessLayer.Services
             return response;
         }
 
-        public async Task<Response> TDocumentosEmpresas(string idCompañia, string fechaInicio, string fachaFinal)
+        public async Task<Response> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin)
         {
-            List<TipoDocumento>
-
+            response = await pruebasRepositorio.TDocumentosEmpresas(CiCompania,fechaInicio,fechaFin);
+            return response;
         }
 
 

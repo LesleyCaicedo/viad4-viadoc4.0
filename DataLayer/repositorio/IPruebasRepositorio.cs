@@ -10,5 +10,7 @@ namespace DataLayer.repositorio
     public interface IPruebasRepositorio
     {
         public Task<Response> BuscarDocumentosError(string tipoDocumento);
+
+        public Task<Response> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin);
     }
 }

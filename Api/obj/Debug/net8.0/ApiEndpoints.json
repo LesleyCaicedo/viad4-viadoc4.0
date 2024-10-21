@@ -62,5 +62,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.PruebasController",
+    "Method": "TDocumentosEmpresas",
+    "RelativePath": "api/Pruebas/TDocumentosEmpresas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CiCompania",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaInicio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
