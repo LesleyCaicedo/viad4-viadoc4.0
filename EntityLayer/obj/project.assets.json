@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\ViaDoc\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\ViaDoc\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\viamatica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\obj\\",
+      "outputPath": "C:\\ViaDoc\\viad4-viadoc4.0\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\viamatica\\AppData\\Roaming\\NuGet\\NuGet.Config",

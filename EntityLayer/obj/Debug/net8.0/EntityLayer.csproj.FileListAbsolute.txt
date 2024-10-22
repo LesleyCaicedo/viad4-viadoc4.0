@@ -11,3 +11,16 @@ C:\Users\viamatica\source\repos\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\ref
 C:\Users\viamatica\source\repos\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
 C:\Users\viamatica\source\repos\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll
 C:\Users\viamatica\source\repos\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\bin\Debug\net8.0\EntityLayer.deps.json
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\bin\Debug\net8.0\EntityLayer.dll
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\bin\Debug\net8.0\EntityLayer.pdb
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.AssemblyReference.cache
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfoInputs.cache
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfo.cs
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.dll
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
+C:\ViaDoc\viad4-viadoc4.0\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll

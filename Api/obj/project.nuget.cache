@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y9i1AzGftqg=",
+  "dgSpecHash": "+iZFYu8YTAI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Api.csproj",
+  "projectFilePath": "C:\\ViaDoc\\viad4-viadoc4.0\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\viamatica\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\viamatica\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

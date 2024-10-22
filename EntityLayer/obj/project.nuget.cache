@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kHHUclo5tzw=",
+  "dgSpecHash": "B9jZbfULJ2A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\ViaDoc\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\viamatica\\.nuget\\packages\\riok.mapperly\\4.0.0\\riok.mapperly.4.0.0.nupkg.sha512"
   ],

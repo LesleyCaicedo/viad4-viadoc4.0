@@ -8254,11 +8254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\ViaDoc\\viad4-viadoc4.0\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Api.csproj",
+      "projectPath": "C:\\ViaDoc\\viad4-viadoc4.0\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\viamatica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\obj\\",
+      "outputPath": "C:\\ViaDoc\\viad4-viadoc4.0\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\viamatica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8276,11 +8276,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\ViaDoc\\viad4-viadoc4.0\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\ViaDoc\\viad4-viadoc4.0\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj"
+            "C:\\ViaDoc\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\ViaDoc\\viad4-viadoc4.0\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }
