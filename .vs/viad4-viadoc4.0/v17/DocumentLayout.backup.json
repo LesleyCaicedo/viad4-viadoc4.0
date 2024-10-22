@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{BA2D7C01-2F7E-4377-B3E8-26272B100F14}|Api\\Api.csproj|solutionrelative:api\\controllers\\pruebascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\dto\\tipodocumentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\dto\\tipodocumentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\ipruebaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\ipruebaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73F1D3BA-78E9-46E7-A0D3-DC768F7FEE01}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\pruebasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\entitylayer\\dto\\tipodocumentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AFFCCC3-18D9-46DF-9C64-56BD48EA8586}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\dto\\tipodocumentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DD83B52-1387-458F-BB9C-F798F4FDAE53}|DataLayer\\DataLayer.csproj|c:\\users\\viamatica\\source\\repos\\viad4-viadoc4.0\\datalayer\\repositorio\\ipruebasrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PruebasServicio.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\BusinessLayer\\Services\\PruebasServicio.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\PruebasServicio.cs",
@@ -80,8 +80,7 @@
               "RelativeToolTip": "DataLayer\\repositorio\\IPruebasRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T16:50:30.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T16:50:30.908Z"
             },
             {
               "$type": "Document",
@@ -93,8 +92,7 @@
               "RelativeToolTip": "DataLayer\\Utilities\\Utilitie.cs",
               "ViewState": "AgIAAAcBAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T16:02:52.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T16:02:52.25Z"
             },
             {
               "$type": "Document",
@@ -104,14 +102,14 @@
               "RelativeDocumentMoniker": "Api\\Controllers\\PruebasController.cs",
               "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\Api\\Controllers\\PruebasController.cs",
               "RelativeToolTip": "Api\\Controllers\\PruebasController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwCMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T15:32:06.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TipoDocumentoDTO.cs",
               "DocumentMoniker": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\EntityLayer\\DTO\\TipoDocumentoDTO.cs",
               "RelativeDocumentMoniker": "EntityLayer\\DTO\\TipoDocumentoDTO.cs",
@@ -119,8 +117,7 @@
               "RelativeToolTip": "EntityLayer\\DTO\\TipoDocumentoDTO.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAuwBwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T13:21:57.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T13:21:57.291Z"
             },
             {
               "$type": "Document",
@@ -130,7 +127,7 @@
               "RelativeDocumentMoniker": "DataLayer\\repositorio\\PruebasRepositorio.cs",
               "ToolTip": "C:\\Users\\viamatica\\source\\repos\\viad4-viadoc4.0\\DataLayer\\repositorio\\PruebasRepositorio.cs",
               "RelativeToolTip": "DataLayer\\repositorio\\PruebasRepositorio.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAvwDcAAAAhAQAAAAAAAA==",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAYwFQBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T13:04:56.778Z",
               "EditorCaption": ""
