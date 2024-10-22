@@ -16,9 +16,9 @@ namespace BusinessLayer.Services
 
         Response response = new Response();
 
-        public PruebasServicio(IPruebasRepositorio pruebasRepositorio)
+        public PruebasServicio(IPruebasRepositorio pruebas)
         {
-            this.pruebasRepositorio = pruebasRepositorio;
+            pruebasRepositorio = pruebas;
         }
 
         public async Task<Response> BuscarDocumentosError(string tipoDocumento)
