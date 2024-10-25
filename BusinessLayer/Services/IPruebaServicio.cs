@@ -1,4 +1,5 @@
-﻿using EntityLayer.Responses;
+﻿using EntityLayer.DTO;
+using EntityLayer.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace BusinessLayer.Services
     {
         public Task<Response> BuscarDocumentosError(string tipoDocumento);
         public Task<Response> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin);
+        public Task<Response> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Services;
+using EntityLayer.DTO;
 using EntityLayer.Responses;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +26,17 @@ namespace Api.Controllers
 
             response = await pruebaServicio.BuscarDocumentosError(tipoDocumento);
             if (response.Code == ResponseType.Error) 
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
+        {
+            response = await pruebaServicio.BusquedaDocFiltros(CiCompania, CiTipoDocumento, NumDocumentos, ClaveAcceso, Identificacion, NombreRS, FechaInicio, FechaFin, Autorizacion);
+            if (response.Code == ResponseType.Error)
             {
                 return BadRequest(response);
             }

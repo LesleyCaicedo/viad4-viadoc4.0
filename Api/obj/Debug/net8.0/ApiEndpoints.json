@@ -65,6 +65,62 @@
   },
   {
     "ContainingType": "Api.Controllers.PruebasController",
+    "Method": "BusquedaDocFiltros",
+    "RelativePath": "api/Pruebas/BusquedaDocFiltros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CiCompania",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CiTipoDocumento",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NumDocumentos",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ClaveAcceso",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Identificacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NombreRS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaInicio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaFin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Autorizacion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.PruebasController",
     "Method": "TDocumentosEmpresas",
     "RelativePath": "api/Pruebas/TDocumentosEmpresas",
     "HttpMethod": "GET",

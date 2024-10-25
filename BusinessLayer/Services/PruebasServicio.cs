@@ -1,4 +1,5 @@
 ﻿using DataLayer.repositorio;
+using EntityLayer.DTO;
 using EntityLayer.Models;
 using EntityLayer.Responses;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
@@ -24,6 +25,12 @@ namespace BusinessLayer.Services
         public async Task<Response> BuscarDocumentosError(string tipoDocumento)
         {
             response = await pruebasRepositorio.BuscarDocumentosError(tipoDocumento);
+            return response;
+        }
+
+        public async Task<Response> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
+        {
+            response = await pruebasRepositorio.BusquedaDocFiltros(CiCompania, CiTipoDocumento, NumDocumentos, ClaveAcceso, Identificacion, NombreRS, FechaInicio, FechaFin, Autorizacion);
             return response;
         }
 

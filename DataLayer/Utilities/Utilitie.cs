@@ -1,4 +1,6 @@
-﻿using EntityLayer.DTO.FacturaDTO;
+﻿using EntityLayer.DTO;
+using EntityLayer.DTO.FacturaDTO;
+using EntityLayer.Models;
 using EntityLayer.Responses;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -342,7 +344,86 @@ namespace DataLayer.Utilities
             }
             return digitoVerificador.ToString();
         }
-    
-        
+
+        public async Task<Response> DocumentoFiltro(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
+        {
+            Response response = new Response();
+
+            
+            string tipoDocu = CiTipoDocumento;
+
+            if (tipoDocu != null)
+            {
+                switch (tipoDocu)
+                {
+                    case "01":
+                        List<Factura1> cabecera = new List<Factura1>();
+
+                        var compania = await _context.Compania.FirstOrDefaultAsync(c => c.CiCompania == CiCompania);
+
+                        if (compania == null)
+                        {
+                            response.Code = ResponseType.Error;
+                            response.Message = "Esa compañia no existe";
+                            
+                        }else
+                        {
+                            if (ClaveAcceso != null)
+                            {
+                                cabecera = await _context.Facturas1.Where(r => r.CiCompania == CiCompania && r.TxClaveAcceso == ClaveAcceso).ToListAsync();
+                            }
+
+                            //if (NombreRS != null)
+                            //{
+                            //    cabecera = await _context.Facturas1.Where(r => r.TxRazonSocialComprador == NombreRS).ToListAsync();
+                            //}
+
+                            response.Code = ResponseType.Success;
+                            response.Message = "_____________________";
+                            response.Data = cabecera;
+                        }        
+
+                        break;
+
+                    case "03":
+
+                        
+                        break;
+
+                    case "04":
+
+                        
+                        break;
+
+                    case "05":
+
+                        
+                        break;
+
+                    case "06":
+
+                        
+                        break;
+
+                    case "07":
+
+                            
+
+                        break;
+
+                    default:
+                        response.Code = ResponseType.Error;
+                        response.Message = "No ingreso un tipo de documento valido";
+                        break;
+                }
+
+                return response;
+            }
+
+            return response;
+        }
+
+
+
     }
 }

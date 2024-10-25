@@ -35,6 +35,16 @@ namespace DataLayer.repositorio
             return response;
         }
 
+        public async Task<Response> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
+        {
+            Response response = new();
+            Utilitie util = new Utilitie(_context);
+
+            response = await util.DocumentoFiltro(CiCompania, CiTipoDocumento, NumDocumentos, ClaveAcceso, Identificacion, NombreRS, FechaInicio, FechaFin, Autorizacion);
+
+            return response;
+        }
+
         public async Task<Response> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin)
         {
             List<TipoDocumentoDTO> tipoDocumentoDTO = new List<TipoDocumentoDTO>();
@@ -221,9 +231,65 @@ namespace DataLayer.repositorio
                 return response;
             }
 
-            TipoDocumentoDTO CompRetencion = new TipoDocumentoDTO()
+            TipoDocumentoDTO guiaRemision = new TipoDocumentoDTO() 
             {
                 TxDescripcion = "Comprobante de Retencion",
+                CiTipoDocumento = "06",
+                estado = new EstadosDTO(),
+            };
+            try
+            {
+                List<GuiaRemision> fechas = new();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.CiEstado == "A" && f.CiCompania == CiCompania).ToListAsync();
+                guiaRemision.estado.A = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.CiEstadoRecepcionAutorizacion == "FI").ToListAsync();
+                guiaRemision.estado.FI = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.CiEstadoRecepcionAutorizacion == "EFI").ToListAsync();
+                guiaRemision.estado.EFI = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.CiEstadoRecepcionAutorizacion == "ERE" || !f.XmlDocumentoAutorizado.Contains(">AUTORIZADO") && f.CiEstadoRecepcionAutorizacion == "AU").ToListAsync();
+                guiaRemision.estado.ERE = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.CiEstadoRecepcionAutorizacion == "RE").ToListAsync();
+                guiaRemision.estado.RE = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.CiEstadoRecepcionAutorizacion == "EAU" || f.CiEstadoRecepcionAutorizacion == "NAU" || f.CiEstadoRecepcionAutorizacion == "RAU").ToListAsync();
+                guiaRemision.estado.EAU = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => f.XmlDocumentoAutorizado.Contains(">AUTORIZADO")).ToListAsync();
+                guiaRemision.estado.AU = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => (f.CiEstadoRecepcionAutorizacion == "EEV" || f.CiEstadoRecepcionAutorizacion == "ENP") && f.XmlDocumentoAutorizado.Contains(">AUTORIZADO")).ToListAsync();
+                guiaRemision.estado.EEV = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+                fechas = await _context.GuiaRemisions.Where(f => (f.CiEstadoRecepcionAutorizacion == "ECP" || f.CiEstadoRecepcionAutorizacion == "ENV") && f.XmlDocumentoAutorizado.Contains(">AUTORIZADO")).ToListAsync();
+                guiaRemision.estado.ECP = fechas.Where(f => DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) >= DateTime.ParseExact(fechaInicio, dateformat, cultures) && DateTime.ParseExact(f.TxFechaIniTransporte, dateformat, cultures) <= DateTime.ParseExact(fechaFin, dateformat, cultures)).Count();
+                fechas.Clear();
+
+            }
+            catch (Exception ex)
+            {
+                response.Code = ResponseType.Error;
+                response.Message = ex.Message;
+
+                return response;
+            }
+
+
+            TipoDocumentoDTO CompRetencion = new TipoDocumentoDTO()
+            {
+                TxDescripcion = "Guia de Remision",
                 CiTipoDocumento = "07",
                 estado = new EstadosDTO(),
             };
@@ -338,6 +404,7 @@ namespace DataLayer.repositorio
             tipoDocumentoDTO.Add(NotaCredito);
             tipoDocumentoDTO.Add(notaDebito);
             tipoDocumentoDTO.Add(CompRetencion);
+            tipoDocumentoDTO.Add(guiaRemision);
             tipoDocumentoDTO.Add(liquidacion);
             
             response.Code = ResponseType.Success;
