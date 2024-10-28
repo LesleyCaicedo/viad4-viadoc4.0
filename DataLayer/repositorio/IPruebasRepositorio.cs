@@ -12,6 +12,8 @@ namespace DataLayer.repositorio
     {
         public Task<Response> BuscarDocumentosError(string tipoDocumento);
         public Task<Response> TDocumentosEmpresas(int CiCompania, string fechaInicio, string fechaFin);
-        public Task<Response> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion);
+        public Task<Response> BusquedaDocFiltros(FiltroDocDTO filtroDocDTO);
+            //(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion);
+        public Task<Response> FiltroBusqueda(string claveAcceso);
     }
 }

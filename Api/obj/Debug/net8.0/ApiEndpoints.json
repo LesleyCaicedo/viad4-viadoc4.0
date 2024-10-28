@@ -48,6 +48,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Api.Controllers.FiltroController",
+    "Method": "FiltroBusqueda",
+    "RelativePath": "api/Filtro/FiltroBusqueda",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claveAcceso",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Api.Controllers.PruebasController",
     "Method": "BuscarDocumentosError",
     "RelativePath": "api/Pruebas/BuscarDocumentosError",
@@ -113,6 +129,22 @@
       },
       {
         "Name": "Autorizacion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.PruebasController",
+    "Method": "FiltroBusqueda",
+    "RelativePath": "api/Pruebas/FiltroBusqueda",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claveAcceso",
         "Type": "System.String",
         "IsRequired": false
       }

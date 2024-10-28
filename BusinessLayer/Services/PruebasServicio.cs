@@ -28,9 +28,9 @@ namespace BusinessLayer.Services
             return response;
         }
 
-        public async Task<Response> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
+        public async Task<Response> BusquedaDocFiltros(FiltroDocDTO filtroDocDTO)
         {
-            response = await pruebasRepositorio.BusquedaDocFiltros(CiCompania, CiTipoDocumento, NumDocumentos, ClaveAcceso, Identificacion, NombreRS, FechaInicio, FechaFin, Autorizacion);
+            response = await pruebasRepositorio.BusquedaDocFiltros(filtroDocDTO);
             return response;
         }
 
@@ -40,6 +40,10 @@ namespace BusinessLayer.Services
             return response;
         }
 
-
+        public async Task<Response> FiltroBusqueda(string claveAcceso)
+        {
+            response = await pruebasRepositorio.FiltroBusqueda(claveAcceso);
+            return response;
+        }
     }
 }

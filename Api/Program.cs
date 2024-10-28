@@ -21,6 +21,9 @@ builder.Services.AddScoped<INotaDebitoRepositorio, NotaDebitoRepositorio>();
 builder.Services.AddScoped<IPruebasRepositorio, PruebasRepositorio>();
 builder.Services.AddScoped<IPruebaServicio, PruebasServicio>();
 
+builder.Services.AddScoped<IFiltroRepositorio, FiltroRepositorio>();
+builder.Services.AddScoped<IFiltroServicio, FiltroServicio>();
+
 builder.Services.AddDbContext<FacturacionElectronicaQaContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"))
     );

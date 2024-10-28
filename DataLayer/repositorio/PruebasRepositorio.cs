@@ -35,12 +35,90 @@ namespace DataLayer.repositorio
             return response;
         }
 
-        public async Task<Response> BusquedaDocFiltros(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
+        public async Task<Response> BusquedaDocFiltros(FiltroDocDTO filtroDocDTO)
+            //(int CiCompania, string CiTipoDocumento, string NumDocumentos, string ClaveAcceso, string Identificacion, string NombreRS, string FechaInicio, string FechaFin, string Autorizacion)
         {
-            Response response = new();
-            Utilitie util = new Utilitie(_context);
+            string tipoDocu = filtroDocDTO.CiTipoDocumento;
 
-            response = await util.DocumentoFiltro(CiCompania, CiTipoDocumento, NumDocumentos, ClaveAcceso, Identificacion, NombreRS, FechaInicio, FechaFin, Autorizacion);
+            if (tipoDocu != null)
+            {
+                switch (tipoDocu)
+                {
+                    case "01":
+                        try
+                        {
+                            List<Factura1> cabecera = new();
+
+                            var compania = await _context.Compania.FirstOrDefaultAsync(c => c.CiCompania == filtroDocDTO.CiCompania);
+
+                            if (compania == null)
+                            {
+                                response.Code = ResponseType.Error;
+                                response.Message = "Esa compañia no existe";
+
+                                return response;
+                            }
+                            else
+                            {
+                                if (filtroDocDTO.ClaveAcceso != null)
+                                {
+                                    cabecera = await _context.Facturas1.Where(r => r.CiCompania == filtroDocDTO.CiCompania && r.TxClaveAcceso == filtroDocDTO.ClaveAcceso).ToListAsync();
+                                    response.Code = ResponseType.Success;
+                                    response.Data = cabecera;
+
+                                    return response;
+                                }
+
+                                //if (NombreRS != null)
+                                //{
+                                //    cabecera = await _context.Facturas1.Where(r => r.TxRazonSocialComprador == NombreRS).ToListAsync();
+                                //}
+                            }       
+
+                        }
+                        catch (Exception ex)
+                        {
+                            response.Code = ResponseType.Error;
+                            response.Message = ex.Message;
+
+                            return response;
+                        }
+
+                        break;
+
+                    //case "03":
+
+
+                    //    break;
+
+                    //case "04":
+
+
+                    //    break;
+
+                    //case "05":
+
+
+                    //    break;
+
+                    //case "06":
+
+
+                    //    break;
+
+                    //case "07":
+
+
+
+                    //    break;
+
+                    default:
+                        response.Code = ResponseType.Error;
+                        response.Message = "No ingreso un tipo de documento valido";
+                        break;
+                }
+
+            }
 
             return response;
         }
@@ -411,6 +489,37 @@ namespace DataLayer.repositorio
             response.Message = "";
             response.Data = tipoDocumentoDTO;
             return response;
+        }
+
+        public async Task<Response> FiltroBusqueda(string claveAcceso)
+        {
+            List<Factura1> lista = new List<Factura1>();
+
+            try
+            {
+                if (claveAcceso == null)
+                {
+                    response.Code = ResponseType.Error;
+                    response.Message = "Error";
+                }
+                else
+                {
+                    lista = await _context.Facturas1.Where(x => x.TxClaveAcceso == claveAcceso).ToListAsync();
+
+                    response.Code = ResponseType.Success;
+                    response.Message = "--------------";
+                    response.Data = lista;
+                }
+
+                return response;
+            }
+            catch (Exception ex)
+            {
+                response.Code = ResponseType.Error;
+                response.Message = ex.Message;
+
+                return response;
+            }
         }
     }
 }
